@@ -26,6 +26,7 @@
   },
   "remote_servers": {
     "oracle-ai-fabric-evolve-remote":{
+      "name": "oracle-ai-fabric-evolve-remote-mcp",
       "description": "Oracle My Roadmap MCP server - Oracle AI Fabric Evolve",
       "tier": "Official",
       "status": "Active",
@@ -39,6 +40,7 @@
       "url": "https://omcs-ssp2-pre-dev.opc.oracleoutsourcing.com/ai-fabric-mcp-evolve/v1/mcp/sse"
     },
     "oracle-navigator-core-service-remote":{
+      "name": "oracle-navigator-core-service-remote-mcp",
       "description": "MCP server for the Oracle CQS API - Oracle Navigator Core Service",
       "transport": "sse",
       "tier": "Official",
@@ -52,6 +54,7 @@
       "url": "https://omcs-ssp2-pre-dev.opc.oracleoutsourcing.com/navigator-core-service-mcp/mcp/v1/sse"
     },
     "oracle-ai-fabric-releases-remote":{
+      "name": "oracle-ai-fabric-releases-remote-mcp",
       "description": "MCP server for the Oracle AI Fabric releases",
       "custom_metadata": {
         "author":"Oracle",
