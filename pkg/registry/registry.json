@@ -1,0 +1,27 @@
+{
+  "$schema": "https://raw.githubusercontent.com/stacklok/toolhive/main/pkg/registry/data/toolhive-legacy-registry.schema.json",
+  "version": "1.0.0",
+  "last_updated": "2025-08-15T10:00:00Z",
+  "servers": {
+    "my-greeting-server": {
+      "name": "greeting-instance",
+      "target_port": 8000,
+      "description": "My custom MCP server with a simple greeting tool that returns a string.",
+      "image": "ocir.us-ashburn-1.oci.oraclecloud.com/axll8ybmep6i/fastmcp-trial:1.0.0",
+      "status": "Active",
+      "tier": "Community",
+      "transport": "sse",
+      "tags": ["custom", "greeting", "no-external-calls"],
+      "tools": ["greeting-tool"],
+      "permissions": {
+        "network": {
+          "outbound": {
+            "insecure_allow_all": false,
+            "allow_host": [],
+            "allow_port": []
+          }
+        }
+      }
+    }
+  }
+}
