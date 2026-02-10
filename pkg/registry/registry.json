@@ -23,5 +23,46 @@
         }
       }
     }
+  },
+  "remote_servers": {
+    "oracle-ai-fabric-evolve-remote":{
+      "description": "Oracle My Roadmap MCP server - Oracle AI Fabric Evolve",
+      "tier": "Official",
+      "status": "Active",
+      "transport": "sse",
+      "tools": ["get_roadmaps", "get_roadmap_features", "get_missing_features", "get_users", "add_features", "move_features_to_column", "update_feature_status", "add_comment_to_feature", "update_feature_assignees", "delete_features"],
+      "tags": ["roadmaps", "features", "update", "add", "users"],
+      "custom_metadata": {
+        "author":"Oracle",
+        "homepage":"oracle.com"
+      },
+      "url": "https://omcs-ssp2-pre-dev.opc.oracleoutsourcing.com/ai-fabric-mcp-evolve/v1/mcp/sse"
+    },
+    "oracle-navigator-core-service-remote":{
+      "description": "MCP server for the Oracle CQS API - Oracle Navigator Core Service",
+      "transport": "sse",
+      "tier": "Official",
+      "status": "Active",
+      "tools": ["get_programs", "get_programs_status", "get_programs_partner", "get_programs_pillar", "get_projects_pillar", "get_programs_products", "get_projects_products", "get_projects", "get_dates", "get_status", "get_desc", "get_desc_proj", "get_notes", "get_notes_proj", "get_users", "get_journeys_desc", "get_journeys_programs", "get_journeys_stages", "get_stages_activites", "get_stages_milestones", "get_stages_overview", "get_QA"],
+      "tags": ["programs", "projects", "journeys", "stages", "milestones", "assessments", "users"],
+      "custom_metadata": {
+        "author":"Oracle",
+        "homepage":"oracle.com"
+      },
+      "url": "https://omcs-ssp2-pre-dev.opc.oracleoutsourcing.com/navigator-core-service-mcp/mcp/v1/sse"
+    },
+    "oracle-ai-fabric-releases-remote":{
+      "description": "MCP server for the Oracle AI Fabric releases",
+      "custom_metadata": {
+        "author":"Oracle",
+        "homepage":"oracle.com"
+      },
+      "transport": "sse",
+      "tier": "Official",
+      "status": "Active",
+      "tools": ["get_pillars", "get_products", "get_releases", "get_themes", "get_release_features", "count_release_features", "get_release_feature_by_id", "get_product_pillars"],
+      "tags": ["features", "releases", "pillars", "products", "themes", "search", "mapping"],
+      "url": "https://omcs-ssp2-pre-dev.opc.oracleoutsourcing.com/ai-fabric-mcp-releases/v1/mcp/sse/"
+    }
   }
 }
